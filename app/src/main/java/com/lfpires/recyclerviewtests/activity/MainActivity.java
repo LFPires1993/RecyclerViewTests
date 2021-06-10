@@ -8,10 +8,15 @@ import android.os.Bundle;
 
 import com.lfpires.recyclerviewtests.R;
 import com.lfpires.recyclerviewtests.adapter.Adapter;
+import com.lfpires.recyclerviewtests.model.Filmes;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
     private RecyclerView recyclerviewfilmes;
+    private List<Filmes> listaFilmes = new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,6 +24,9 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         recyclerviewfilmes = findViewById(R.id.recyclerViewFilmes);
+
+        // Listagem de Filmes
+        this.criarFilmes();
 
         // Configurações do Adapter
         Adapter adapter = new Adapter();
@@ -30,4 +38,9 @@ public class MainActivity extends AppCompatActivity {
         recyclerviewfilmes.setAdapter(adapter);
 
     }
+
+    public void criarFilmes(){
+
+    }
+
 }
