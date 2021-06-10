@@ -35,10 +35,15 @@ public class Adapter extends RecyclerView.Adapter<Adapter.MyViewHolder> {
 
     public class MyViewHolder extends RecyclerView.ViewHolder{
 
-        TextView titutlo, genero, ano;
+        TextView titulo, genero, ano;
 
         public MyViewHolder(@NonNull View itemView) {
             super(itemView);
+
+            titulo = itemView.findViewById(R.id.textTitulo);
+            genero = itemView.findViewById(R.id.textGenero);
+            ano    = itemView.findViewById(R.id.textAno);
+
         }
     }
 }
