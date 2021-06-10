@@ -1,8 +1,10 @@
-package com.lfpires.recyclerviewtests;
+package com.lfpires.recyclerviewtests.activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
+import com.lfpires.recyclerviewtests.R;
 
 public class MainActivity extends AppCompatActivity {
 
