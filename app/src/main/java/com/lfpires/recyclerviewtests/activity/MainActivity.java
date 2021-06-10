@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
         // Configurações RecyclerView
         RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(getApplicationContext());
         recyclerviewfilmes.setLayoutManager(layoutManager);
-        recyclerviewfilmes.setHasFixedSize(false); // Indicação do Google para tornar o layout melhor otimizado
+        recyclerviewfilmes.setHasFixedSize(true); // Indicação do Google para tornar o layout melhor otimizado
         //recyclerviewfilmes.setAdapter();
 
     }
