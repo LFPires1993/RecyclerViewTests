@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
         this.criarFilmes();
 
         // Configurações do Adapter
-        Adapter adapter = new Adapter();
+        Adapter adapter = new Adapter(listaFilmes);
 
         // Configurações RecyclerView
         RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(getApplicationContext());
