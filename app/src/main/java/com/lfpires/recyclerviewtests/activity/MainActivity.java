@@ -41,6 +41,11 @@ public class MainActivity extends AppCompatActivity {
 
     public void criarFilmes(){
 
+        for (int x = 0; x < 20; x++){
+            Filmes filme = new Filmes("Filme " + x + 1, "Ano " + x + 1, "Genero " + x + 1);
+            this.listaFilmes.add(filme);
+        }
+
     }
 
 }
