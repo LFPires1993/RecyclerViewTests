@@ -1,5 +1,6 @@
 package com.lfpires.recyclerviewtests.adapter;
 
+import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
@@ -7,13 +8,19 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.lfpires.recyclerviewtests.R;
+
 public class Adapter extends RecyclerView.Adapter<Adapter.MyViewHolder> {
 
 
     @NonNull
     @Override
     public MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        return null;
+
+        View itemListaFilmes = LayoutInflater.from(parent.getContext()).inflate(
+                R.layout.adapter_lista_filmes, parent, false);
+
+        return new MyViewHolder(itemListaFilmes);
     }
 
     @Override
