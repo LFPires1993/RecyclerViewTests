@@ -40,6 +40,10 @@ public class MainActivity extends AppCompatActivity {
         recyclerviewfilmes.addItemDecoration(new DividerItemDecoration(getApplicationContext(), LinearLayout.VERTICAL));
         recyclerviewfilmes.setAdapter(adapter);
 
+        recyclerviewfilmes.addOnItemTouchListener(
+
+        );
+
     }
 
     public void criarFilmes(){
