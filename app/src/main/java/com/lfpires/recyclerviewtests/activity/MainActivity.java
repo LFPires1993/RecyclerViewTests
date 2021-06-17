@@ -6,9 +6,12 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.LinearLayout;
 
 import com.lfpires.recyclerviewtests.R;
+import com.lfpires.recyclerviewtests.RecyclerItemClickListener;
 import com.lfpires.recyclerviewtests.adapter.Adapter;
 import com.lfpires.recyclerviewtests.model.Filmes;
 
@@ -41,7 +44,26 @@ public class MainActivity extends AppCompatActivity {
         recyclerviewfilmes.setAdapter(adapter);
 
         recyclerviewfilmes.addOnItemTouchListener(
+            new RecyclerItemClickListener(
+                    getApplicationContext(),
+                    recyclerviewfilmes,
+                    new RecyclerItemClickListener.OnItemClickListener() {
+                        @Override
+                        public void onItemClick(View view, int position) {
 
+                        }
+
+                        @Override
+                        public void onLongItemClick(View view, int position) {
+
+                        }
+
+                        @Override
+                        public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+
+                        }
+                    }
+            )
         );
 
     }
