@@ -9,6 +9,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.LinearLayout;
+import android.widget.Toast;
 
 import com.lfpires.recyclerviewtests.R;
 import com.lfpires.recyclerviewtests.RecyclerItemClickListener;
@@ -50,12 +51,20 @@ public class MainActivity extends AppCompatActivity {
                     new RecyclerItemClickListener.OnItemClickListener() {
                         @Override
                         public void onItemClick(View view, int position) {
-
+                            Toast.makeText(
+                                    getApplicationContext(),
+                                    /* text */ "Item Pressionado",
+                                    Toast.LENGTH_LONG
+                            ).show();
                         }
 
                         @Override
                         public void onLongItemClick(View view, int position) {
-
+                            Toast.makeText(
+                                    getApplicationContext(),
+                                    /* text */ "Item Longo",
+                                    Toast.LENGTH_LONG
+                            ).show();
                         }
 
                         @Override
